@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="380.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MortgageOverviewController">
+   <children>
+      <SplitPane dividerPositions="0.5028790786948176" layoutX="112.0" layoutY="66.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="129.0" layoutY="42.0" prefHeight="16.0" prefWidth="186.0" text="Enter Your Total Gross Income:" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="42.0" />
+                  <Label layoutX="58.0" layoutY="82.0" prefHeight="16.0" prefWidth="186.0" text="Enter Your Total Monthly Debt:" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="82.0" />
+                  <Label layoutX="137.0" layoutY="164.0" prefHeight="16.0" prefWidth="101.0" text="Enter The Term:" AnchorPane.bottomAnchor="198.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="164.0" />
+                  <Label layoutX="81.0" layoutY="189.0" prefHeight="26.0" prefWidth="163.0" text="Enter The Down Payment:" AnchorPane.bottomAnchor="163.0" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="189.0" />
+                  <Label layoutX="43.0" layoutY="129.0" prefHeight="16.0" prefWidth="210.0" text="Enter Your Mortgage Interest Rate:" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="378.0" prefWidth="283.0">
+               <children>
+                  <TextField fx:id="totalMonthlyDebt" layoutX="14.0" layoutY="80.0" AnchorPane.bottomAnchor="272.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="80.0" />
+                  <TextField fx:id="totalGrossIncome" layoutX="14.0" layoutY="36.0" prefHeight="26.0" prefWidth="163.0" AnchorPane.bottomAnchor="316.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="36.0" />
+                  <ComboBox fx:id="term" layoutX="14.0" layoutY="163.0" prefWidth="150.0" promptText="Select One" />
+                  <TextField fx:id="downPayment" layoutX="14.0" layoutY="196.0" AnchorPane.bottomAnchor="156.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="196.0" />
+                  <TextField fx:id="mortgageInterestRate" layoutX="14.0" layoutY="125.0" />
+                  <Button fx:id="submit" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#buttonAction" text="Calculate Mortgage" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="107.0" AnchorPane.topAnchor="262.0" />
+                  <Label fx:id="label" layoutX="36.0" layoutY="312.0" prefHeight="26.0" prefWidth="141.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
